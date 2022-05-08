@@ -6,21 +6,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { FilterPipe } from './filter.pipe';
-import { OptionComponent } from './autocomplete/option/option.component';
-import { AutocompleteContentDirective } from './autocomplete/autocomplete-content.directive';
-import { AutocompleteDirective } from './autocomplete/autocomplete.directive';
 import { SimpleAutocompleteComponent } from './simple-autocomplete/simple-autocomplete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AutocompleteComponent,
     FilterPipe,
-    OptionComponent,
-    AutocompleteContentDirective,
-    AutocompleteDirective,
     SimpleAutocompleteComponent
   ],
   imports: [
