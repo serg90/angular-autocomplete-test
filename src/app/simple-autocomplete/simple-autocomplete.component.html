@@ -1,0 +1,9 @@
+<div 
+    class="list-container" 
+    *ngIf="control?.value?.length && (list | filter: control.value) as filteredList">
+        <div 
+            class="list-item"
+            (click)="onItemClick(item)"
+            *ngFor="let item of filteredList">{{item[propName]}}
+        </div>
+</div>

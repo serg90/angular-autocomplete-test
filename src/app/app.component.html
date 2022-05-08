@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+
+  <input 
+    class="cities-input"
+    type="text"
+    placeholder="Search..."
+    [formControl]="inputControl"
+    />
+
+  <div *ngIf="cities$ | async as cities">
+    <app-simple-autocomplete
+      [control]="inputControl"
+      [list]="cities"
+      propName="Name"
+      (itemSelected)="onAutocompleteItemClick($event)">
+  </app-simple-autocomplete>
+  </div>
+
+</div>

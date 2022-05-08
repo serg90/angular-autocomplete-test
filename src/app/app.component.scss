@@ -1,0 +1,11 @@
+@import "/src/assets/common/variables";
+
+.cities-input {
+    width: $input-width; 
+    margin: 0 auto; 
+    height: 30px; 
+    text-align: center;
+    font-size: 22px;
+    border-radius: 10px;
+    border-color: #fff;
+}
